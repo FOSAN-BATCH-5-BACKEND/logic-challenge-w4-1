@@ -18,8 +18,14 @@ misalkan yang di minta adalah 5, maka jawabannya:
 
 
 function tabelPerkalian(angka) {
-   
+  let penampung = '';
+  for(let i = 1; i <= 10; i++){
+    penampung += i + ' * ' + angka + ' = ' + i*angka + '\n'
   }
+  return penampung;       
+}
+
+
 
 console.log(tabelPerkalian(5))
 /* 
