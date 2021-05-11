@@ -6,7 +6,24 @@ buatlah fungsi untuk menentukan siapa yang menang dalam pingsut tersebut
 
 
 function pingsut(Rama, Rian) {
-	//buat kodemu disini
+	let penampung = ''
+	if (Rama == Rian){
+		penampung = 'Hasilnya draw'
+	}
+	else if (Rama == 'Rock'){
+		penampung = (Rian == 'Paper') ? 'Pemenangnya Rian' : 'Pemenangnya Rama';
+	}
+	else if (Rama == 'Scissors'){
+		penampung = (Rian == 'Rock') ? 'Pemenangnya Rian' : 'Pemenangnya Rama';
+	}
+	else if (Rama == "Paper"){
+		penampung = (Rian == 'Rock') ? 'Pemenangnya Rama' : 'Pemenangnya Rian'
+	}
+	else{
+		penampung = 'Rama atau Rian memasukan pilihan yang salah';
+	}
+
+return penampung
 }
 
 
