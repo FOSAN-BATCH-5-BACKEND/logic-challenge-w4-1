@@ -19,13 +19,13 @@ misalkan yang di minta adalah 5, maka jawabannya:
 
 function tabelPerkalian(angka) {
   // let penampungIndex = 0
-  // let penampungAngka = 0
-  for(let i = 1; i <= 10; i++){
+  let penampungAngka = 0
+  for(let i = 1; i < 11; i++){
     // hasil = i * angka
     // penampungIndex += i
     // penampungAngka += angka
-    let hasil = i * angka
-    console.log(i +" "+ "*" + " " +angka + " " + "="+ " " + hasil)
+    // let hasil = i * angka
+    penampungAngka += i +" "+ "*" + " " +angka + " " + "="+ " " + i * angka + "\n"
     // console.log(i '*' angka = i * angka)
     // return `${i} * ${angka} = ${i * angka}`
     // console.log(i)
@@ -33,6 +33,7 @@ function tabelPerkalian(angka) {
     // let hasil = i * angka
     // kali = angka[i] * angka
   }
+  return penampungAngka
   // let hasil = penampungIndex * penampungAngka
   // return `${penampungIndex} * ${penampungAngka} = ${hasil}`
   // return penampungIndex
