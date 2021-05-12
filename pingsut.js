@@ -6,7 +6,28 @@ buatlah fungsi untuk menentukan siapa yang menang dalam pingsut tersebut
 
 
 function pingsut(Rama, Rian) {
-	//buat kodemu disini
+	// console.log(Rama, Rian)
+	if(Rama ==Rian){
+		return 'Hasilnya Draw'
+	}
+	// jika Rama memilih Rock dan Rian memilih Paper maka Rian adalah pemenangnya
+	else if(Rama == 'Rock' && Rian == 'Paper'){
+		return 'Pemenangnya Rian'
+	}
+	// jika Rama memilih scissors dan Rian memilih Rock maka Rian pemenangnya
+	else if(Rama == 'Scissors' && Rian == 'Rock'){
+		return 'Pemenangnya Rian'
+	}
+	// jika Rama memilih scissors dan rian memilih paper maka pemenangnya rama
+	else if(Rama == 'Scissors' && Rian == 'Paper'){
+		return 'Pemenangnya Rama'
+	}
+	// jika rama memilih paper dan rian memilih rock maka pemenangnya adalah rama
+	else if(Rama == 'Paper' && Rian == 'Rock'){
+		return 'Pemenangnya Rama'
+	}
+	// jika rama memilih paper dan rian memilih paper maka hasilnya draw
+	// jika rama memilih rock dan rian memilih rock maka hasilnya draw
 }
 
 

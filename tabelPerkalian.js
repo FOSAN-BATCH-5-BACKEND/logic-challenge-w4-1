@@ -18,8 +18,28 @@ misalkan yang di minta adalah 5, maka jawabannya:
 
 
 function tabelPerkalian(angka) {
-   
+  // let penampungIndex = 0
+  // let penampungAngka = 0
+  for(let i = 1; i <= 10; i++){
+    // hasil = i * angka
+    // penampungIndex += i
+    // penampungAngka += angka
+    let hasil = i * angka
+    console.log(i +" "+ "*" + " " +angka + " " + "="+ " " + hasil)
+    // console.log(i '*' angka = i * angka)
+    // return `${i} * ${angka} = ${i * angka}`
+    // console.log(i)
+    // return `${i} * ${angka} = ${hasil}`
+    // let hasil = i * angka
+    // kali = angka[i] * angka
   }
+  // let hasil = penampungIndex * penampungAngka
+  // return `${penampungIndex} * ${penampungAngka} = ${hasil}`
+  // return penampungIndex
+  // return `${i} * ${angka} = hasil`
+  // return `${i} * ${angka} = ${hasil}`
+  // return kali
+}
 
 console.log(tabelPerkalian(5))
 /* 
