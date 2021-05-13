@@ -18,8 +18,15 @@ misalkan yang di minta adalah 5, maka jawabannya:
 
 
 function tabelPerkalian(angka) {
-   
+  let hasilKali = ""; //buat penampung 
+  for (let i = 1; i <= 10; i++){ //buat perulangan 1 - 10
+    hasilKali += i+" * "+ angka +" = "+ (i * angka) + "\n";
+    //buat perkaliannya (i * angka) & "\n"=buat baris baru untuk pengulangannya
   }
+  
+  return `${hasilKali}`
+  
+}
 
 console.log(tabelPerkalian(5))
 /* 
@@ -62,3 +69,4 @@ console.log(tabelPerkalian(13))
 9 * 13 = 117
 10 * 13 = 130
 */
+// console.log(tabelPerkalian(10))
