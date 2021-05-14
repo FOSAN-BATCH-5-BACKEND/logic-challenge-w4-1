@@ -6,9 +6,18 @@ buatlah fungsi untuk menentukan siapa yang menang dalam pingsut tersebut
 
 
 function pingsut(Rama, Rian) {
-	//buat kodemu disini
+	if(Rama == "Rock" && Rian == "Paper"){
+		return "Pemenangnya Rian"
+	}else if(Rama == "Scissors" && Rian == "Rock"){
+		return "Pemenangnya Rian"
+	}else if(Rama == "Scissors" && Rian == "Paper"){
+		return "Pemenangnya Rama"
+	}else if(Rama == "Paper" && Rian == "Rock"){
+		return "Pemenangnya Rama"
+	}else if(Rama == Rian){
+		return "Hasilnya Draw"
+	}
 }
-
 
 
 console.log(pingsut("Rock", "Paper"))  		// "Pemenangnya Rian"
