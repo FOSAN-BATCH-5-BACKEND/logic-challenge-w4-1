@@ -16,12 +16,16 @@ misalkan yang di minta adalah 5, maka jawabannya:
 
 */
 
-
 function tabelPerkalian(angka) {
-   
+  if (angka) {
+    for (let i = 1; i <= 10; i++) {
+      hasil = i * angka;
+      console.log(`${i} * ${angka} = ${hasil}`);
+    }
   }
+}
 
-console.log(tabelPerkalian(5))
+console.log(tabelPerkalian(5));
 /* 
 1 * 5 = 5
 2 * 5 = 10
@@ -35,7 +39,7 @@ console.log(tabelPerkalian(5))
 10 * 5 = 50
 */
 
-console.log(tabelPerkalian(7))
+console.log(tabelPerkalian(7));
 /*
 1 * 7 = 7
 2 * 7 = 14
@@ -49,7 +53,7 @@ console.log(tabelPerkalian(7))
 10 * 7 = 70
 */
 
-console.log(tabelPerkalian(13))
+console.log(tabelPerkalian(13));
 /*
 1 * 13 = 13
 2 * 13 = 26
